@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="pro"></h1>
+   <h1 id="ant"></h1>
+
+   <button onclick="display()">click here</button>
+    
+
+
+<script>
+function display(){
+    var time = new Date().getHours()
+    var greeting
+
+    if(time < 10 ) {
+        greeting="Good morning"
+        document.body.style.backgroundColor="black"
+    }
+    else if (time < 16) {
+        greeting="Good afternoon"
+         document.body.style.backgroundColor = "blue"
+    }
+
+    else if (time < 19 ) {
+        greeting = "Good evening"
+        document.body.style.backgroundColor = "yellow"
+    }
+
+    else {
+        greeting="Good night"
+        document.body.style.backgroundColor = "orange"
+    }
+
+    document.getElementById("pro").innerHTML = time
+      document.getElementById("ant").innerHTML = greeting
+
+}
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
